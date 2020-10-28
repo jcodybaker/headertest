@@ -18,6 +18,7 @@ func main() {
           fmt.Fprintf(w, "%s: %s\n", k, v)
         }
       }
+      fmt.Println(r.Method)
     }),
   }
   log.Fatal(s.ListenAndServe())
